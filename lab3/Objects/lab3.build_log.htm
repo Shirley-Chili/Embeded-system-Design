@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Xinyi Wang, McMaster University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Shirley Wang\Desktop\keil\lab3\lab3.uvprojx
+Project File Date:  08/27/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+compiling ili9341.c...
+compiling i2c_at24c64.c...
+compiling LED_F429Discovery.c...
+compiling Buttons_F429Discovery.c...
+compiling stm32f429i_discovery_sdram.c...
+compiling main.c...
+compiling stm32f429i_discovery.c...
+Src/stm32f4xx_it.c(3): error: expected identifier or '('
+  * @file    GPIO/GPIO_EXTI/Src/stm32f4xx_it.c 
+    ^
+Src/stm32f4xx_it.c(13): error: expected function body after function declarator
+  * <h2><center>&copy; COPYRIGHT(c) 2015 STMicroelectronics</center></h2>
+                                    ^
+Src/stm32f4xx_it.c(41): warning: In file included from...
+./Inc\stm32f4xx_it.h(47): warning: In file included from...
+./Inc/main.h(43): warning: In file included from...
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(778): error: unknown type name 'size_t'
+extern _ARMABI size_t fread(void * __restrict /*ptr*/,
+               ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(779): error: redefinition of parameter 'size_t'
+                    size_t /*size*/, size_t /*nmemb*/, FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,4)));
+                                     ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(779): note: previous declaration is here
+                    size_t /*size*/, size_t /*nmemb*/, FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,4)));
+                    ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(794): error: unknown type name 'size_t'
+extern _ARMABI size_t __fread_bytes_avail(void * __restrict /*ptr*/,
+               ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(810): error: unknown type name 'size_t'
+extern _ARMABI size_t fwrite(const void * __restrict /*ptr*/,
+               ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(811): error: redefinition of parameter 'size_t'
+                    size_t /*size*/, size_t /*nmemb*/, FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,4)));
+                                     ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(811): note: previous declaration is here
+                    size_t /*size*/, size_t /*nmemb*/, FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,4)));
+                    ^
+7 errors generated.
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f429i_discovery_lcd.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_dma2d.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_ltdc_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_ltdc.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_sdram.c...
+compiling stm32f4xx_hal_rtc_ex.c...
+compiling stm32f4xx_ll_fmc.c...
+compiling stm32f4xx_hal_tim_ex.c...
+assembling startup_stm32f429xx.s...
+compiling stm32f4xx_hal_rtc.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_spi.c...
+".\Objects\lab3.axf" - 7 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Shirley Wang\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Shirley Wang\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F42xxx_43xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
